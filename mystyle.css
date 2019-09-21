@@ -1,0 +1,98 @@
+
+/* CSS reset */
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding:0;
+    margin:0;
+}
+
+/* --- BODY --- */
+
+h1, p, h3, h2, h4, img {
+    padding: 0 2% 0 2%;
+}
+
+body {
+    font-family: 'Roboto', sans-sarif;
+    background-color: #bac9d4;
+    font-size: 16px;
+    background-image:linear-gradient(#cc3333, #d1bcbc);
+    background-repeat: no-repeat;
+}
+
+.navbar-brand {
+    font-family: sans-serif;
+}
+
+
+/* --- Wrapper --- */
+
+.wrapper {
+    max-width: 900px;
+    min-width: 200px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    background-color: #EEE;
+}
+
+
+/* --- Header --- */
+
+
+/* --- MAIN --- */
+
+h1 {
+    text-align: center;
+    border-bottom: solid 4px black;
+}
+
+.post {
+    border: solid 3px black;
+    border-radius: 1rem;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 2% 10px 2%;
+}
+
+
+.keepOpen {
+    clear: both;
+}
+
+.textc {
+    text-align: center;
+}
+
+/* --- Image Styling --- */
+
+.mymap {
+    width: 96%;
+    height: 40rem;
+    margin-left: 2%
+}
+
+#aboutpic {
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 100%;
+}
+
+#rpick {
+    float: right;
+    margin: 10px 2% 10px 2%;
+
+}
+/* --- FOOTER --- */
+
+footer {
+    background-color: #e81c0e;
+}
+footer p {
+    color: black;
+    text-align: center;
+    font-size: .8rem;
+    padding: .3rem;
+}
+
+footer a {
+    color: white;
+}
+    
