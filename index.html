@@ -34,87 +34,31 @@
     
     
     <h1>Marc's Indonesian Adventure Blog</h1>
+    <div id="posts">
+      <h4>
+        Table of Contents
+      </h4>
+      <ul>
+        <li v-for="title in titles" v-text="title"></li>
+      </ul>
+      
+      <div id="poststyle">
+        <form v-on:submit.prevent="newPost">
+          <input v-model="addTitle" placeholder="Title"></p>
+          <textarea v-model="addPost" placeholder="Post"></textarea>
+          <br/>
+          <button type="submit">Post</button>
+        </form>
+        <div class="poststyle" v-for="post in posts">
+          <h3>{{post.title}}</h3>
+          <p>{{post.postt}}</p>
+        </div>
+      </div>
+      
+      
+    </div>
     
-    <h4>
-      Table of Contents
-    </h4>
-    <ul>
-      <li><a href="#sma">Starting My Adventure</a></li>
-      <li><a href="#bdg1">Bandung 1</a></li>
-      <li><a href="#bdgfood">Bandung Food</a></li>
-    </ul>
-
-  <div class="post">
-      <h3 id="sma">Starting My Adventure</h3>
-     <p>
-      My adventure in indonesia started when I arrived in Jarkarta, Indonesia
-      in October of 2013. It was not like the state of Utah that I had moved from.
-      This was the first time I had been out of the country and I have never been
-      very far from Utah. As soon as i got off the plane the humidity hit me like
-      a wall. This tropical island was nothing like I had ever experienced before.
-      The first night we got some food and it was delicious. It was fried rice but
-      unlike anything I had ever had before. It was full of flavor and perfectly
-      cooked. The next morning we went to a stadium that had a track around it to 
-      get some exercise and I never imagined that I had that much sweat in my body.
-      By the time we returned home my clothes were drenched in sweat. We went out
-      with those in Jakarta for a day to experience the city and watch some of 
-      the more experienced missionaries. I have never seen a city as big as Jakarta.
-      We rode buses around the city visiting a few people and places that they had
-      planned for the day. The whole day was a blur. It was all so new I could barely
-      wrap my mind around it. Exausted after being in the humidity all day I got some
-      food and went to bed. Then the next day they put me on a bus headed to Bandung.
-  </p>
-  </div>
-  
-  <div class="post">
-      <h3 id="bdg1">Bandung 1</h3>
-      <p>
-          I arrived in Bandung after a four hour bus ride and was picked up by
-          those that I was going to be living with for some time. This was not 
-          only a brand new city but also a brand new country and I was thrown
-          right into the middle of it. We rode a couple public trasports to get
-          my new home and then walked from the main street. I was amazed at how
-          different this country was. There were no homes near us that had any 
-          type of yard. The houses were connected to eachother sharing a wall 
-          with each neighbor. Each house had high gates and walls with spikes or even 
-          broken glass on top. They had attempted to teach us the native
-          language of Indonesian for a couple months befor we headed out and I 
-          thougth that I was getting a hang of it until I was actually there.
-          Nothing could have prepared me for this language and the accent of 
-          those that were native speakers. At first it sounded like we had been 
-          learning the wrong language because I did not understand a word anybody
-          said. I was living with an Indonesian missionary who spoke little english
-          and two other americans that were only there for my first three weeks.
-          Then it was just me and Elder Sumanungkalit. This was a very large city
-          for there to only be the two of us as missionaries for our church. This 
-          was the beggining of a very interesting six months in Bandung.
-      </p>
-  </div>
-  
-  <div class="post">
-      <h3 id="bdgfood">Bandung Food</h3>
-      <p>
-          As I was struggling to learn the language I was still having a lot of 
-          fun. There were so many new foods to try. Almost every meal was served with 
-          rice. For breakfast there was a rice pourage that was very popular. 
-          There were venders that would walk down the streets during different 
-          times of day bringing by food that they would pull around on hand carts.
-          In the morning there would be the rice pourage, a vegetable and fish 
-          cart and my favorite, the bread cart!!! He had many different varieties
-          of bread. some were just a white bread but there were some that were 
-          white bread with different flavors inside sections of the bread. There
-          was a chocolate filled bread, strawberry filled, and one that was filled
-          with a sweet orange filling. At night they would be selling fried rice
-          and fried noodles that they would cook right in front of your house.
-          There were also different shops that would sell food during lunch near
-          our home. They would have chicken, eggs, vegetables and other fried foods
-          all cooked in different spices and methods. I know I am talking a lot 
-          about the food but that's just becuase I enjoyed it this much! I was 
-          passionate about trying new types of food and they would never dissapoint.
-      </p>
-  </div>
-  
-  
+   
    <div class="KeepOpen"></div>
 </main>
 
@@ -129,6 +73,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="script.js"></script>
+
 
 </div>
 </body>

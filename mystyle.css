@@ -40,16 +40,29 @@ body {
 
 /* --- MAIN --- */
 
+ul {
+    color: red;
+}
+
+ul li {
+    color: #cc3333; 
+}
+
+ul li a {
+    color: orange; 
+}
+
 h1 {
     text-align: center;
     border-bottom: solid 4px black;
 }
 
-.post {
+.poststyle {
     border: solid 3px black;
     border-radius: 1rem;
     padding: 10px 10px 10px 10px;
     margin: 20px 2% 10px 2%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
 }
 
 
@@ -61,6 +74,9 @@ h1 {
     text-align: center;
 }
 
+.indor {
+    margin: 20px 2% 20px 2%;
+}
 /* --- Image Styling --- */
 
 .mymap {
